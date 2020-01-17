@@ -48,40 +48,49 @@ Following example shows how to write your first robot automation case:
 1. Create a new file and save it using an extension `.robot`, for example, `my_first.robot`
 2. Write in file `*** Test Cases ***`. This creates [section](https://robotframework.org/robotframework/latest/RobotFrameworkUserGuide.html#test-data-sections) for test cases.
 3. Type in following (note to add the four spaces before `Log To Console`)
-```
-My First Robot Test
-    Log To Console            Hello Robot World!
-```
+
+    ```robotframework
+    My First Robot Test
+        Log To Console            Hello Robot World!
+    ```
+
 4. First test is now ready and it should look like this:
-```
-*** Test Cases ***
 
-My First Robot Test
-    Log To Console            Hello Robot World!
-```
+    ```robotframework
+    *** Test Cases ***
+
+    My First Robot Test
+        Log To Console            Hello Robot World!
+    ```
+
+    <div data-notebook="Examples/my_first.robot"></div>
+
 5. Open Terminal/Command Prompt. Navigate to the same folder where your `.robot` file is located and run the test by inputting command `robot my_first.robot`. For example:
-```
-cd your_folder
-robot my_first.robot
-```
-6. When Robot is run, you will see this:
-```
-> robot my_first.robot
-==============================================================================
-My First                                                                      
-==============================================================================
-My First Robot Test                                                   Hello Robot World!
-My First Robot Test                                                   | PASS |
-------------------------------------------------------------------------------
-My First                                                              | PASS |
-1 critical test, 1 passed, 0 failed
-1 test total, 1 passed, 0 failed
-==============================================================================
-Output:  /output.xml
-Log:     /log.html
-Report:  /report.html
 
-``` 
+    ```
+    cd your_folder
+    robot my_first.robot
+    ```
+
+6. When Robot is run, you will see this:
+
+    ```
+    > robot my_first.robot
+    ==============================================================================
+    My First                                                                      
+    ==============================================================================
+    My First Robot Test                                                   Hello Robot World!
+    My First Robot Test                                                   | PASS |
+    ------------------------------------------------------------------------------
+    My First                                                              | PASS |
+    1 critical test, 1 passed, 0 failed
+    1 test total, 1 passed, 0 failed
+    ==============================================================================
+    Output:  /output.xml
+    Log:     /log.html
+    Report:  /report.html
+
+    ``` 
 Robot has created test report files in the same folder where you run the test. You can check details of the first test run by opening report.html file.
 
 [Examples](./Examples) of this manual introduces Keyword Libraries and Variables related to Robot Framework automation.
@@ -89,3 +98,6 @@ Robot has created test report files in the same folder where you run the test. Y
 ## More information
 
 Thank you for visiting the Beginners Guide! Hope you enjoyed learning Robot Framework. More about writing test cases: [How To Write Good Test Cases](https://github.com/robotframework/HowToWriteGoodTestCases/blob/master/HowToWriteGoodTestCases.rst).
+
+<script src="iframeResizer.min.js"></script>
+<script src="notebook-support.js"></script>
