@@ -2,6 +2,8 @@
 
 ## Introduction
 
+Hello! So you want to learn Robot Framework? This guide is everything you need for getting started! You don’t need any previous experience in test automation to use this guide. With the guide, you will learn how to install Robot Framework on your system and get started building cool test cases.
+
 ## Installation
 
 1. First, check if your computer already has Python programming language. Open Terminal/Command Prompt and type in:
