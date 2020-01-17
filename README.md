@@ -1,4 +1,4 @@
-# Beginners Guide for Robot Framework
+# Beginners Guide to Robot Framework
 
 ## Introduction
 
@@ -16,7 +16,7 @@ python --version
 ```
 pip install robotframework
 ```
-If installation was succesfull, this command prints robot version:
+If installation was succesful, this command prints robot version:
 ```
 robot --version
 ```
@@ -32,7 +32,7 @@ Option 2: Or if you use Windows, run Python using command `py -m `:
 ```
 py -m pip install robotframework
 ```
-and for checking if installation was succesfull:
+and for checking if installation was succesful:
 ```
 py -m robot --version
 ```
