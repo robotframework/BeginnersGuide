@@ -10,23 +10,23 @@
 python --version
 ```
 2. If Python is not installed, download and install latest version from [Python Downloads](https://www.python.org/downloads/). If installing to Windows, check "Add Python to PATH" in the Python installer.
-3. Next, install Robot Framework. Type in to Terminal/command Prompt:
+3. Next, install Robot Framework. Type in to Terminal/Command Prompt:
 ```
 pip install robotframework
 ```
-If installation was succesfull, command line displays Robot Framework's version with command:
+If installation was succesfull, this command works:
 ```
 robot --version
 ```
-Robot Framework is now ready to be used!
+Wow! Robot Framework is now ready to be used!
 
 ### Troubleshooting installation
 
 If command pip does not work, most probable reason is that Python scripts are not in the computer's PATH. There are two options to tackle this:
 
-Option 1: Add Python and scipts forder to PATH. Robot Framework's installation instructions include [in-depth instructions for fixing the PATH](https://github.com/robotframework/robotframework/blob/master/INSTALL.rst#configuring-path).
+Option 1: Add Python and python/scripts forder to PATH. Robot Framework's installation instructions include [in-depth instructions for modifying PATH](https://github.com/robotframework/robotframework/blob/master/INSTALL.rst#configuring-path).
 
-Option 2: Or if you use Windows, you can use Python directly using commands:
+Option 2: Or if you use Windows, run Python using command `py -m `:
 ```
 py -m pip install robotframework
 ```
