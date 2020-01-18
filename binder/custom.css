@@ -1,0 +1,31 @@
+#header,
+#menubar,
+#maintoolbar {
+    display: none !important;
+}
+#notebook {
+    margin: none !important;
+    padding: 0 !important;
+}
+#notebook-container {
+    margin: 0 !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+    width: auto !important;
+}
+#site {
+    height: auto !important;
+}
+body {
+    background: white !important;
+    bottom: auto !important;
+    padding-bottom: 1px;
+}
+.end_space {
+    display: none;
+}
+.input_prompt,
+.prompt,
+.prompt_container {
+    display: none !important;
+}

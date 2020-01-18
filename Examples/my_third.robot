@@ -1,3 +1,4 @@
+# +
 *** Settings ***
 Library                             OperatingSystem
 
@@ -15,3 +16,4 @@ My Forth Robot Test
     ${file_content} =               Get File                            new_file.txt
     Should Be Equal                 ${file_content}                     ${GOOD_TEXT}
     Should Not Be Equal             ${file_content}                     ${BAD_TEXT}
+# -
