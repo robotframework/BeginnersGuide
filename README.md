@@ -77,7 +77,7 @@ My First Robot Test
 cd your_folder
 robot my_first.robot
 ```
-6. When Robot is run, you will see the results:
+5. When Robot is run, you will see the results:
 ```
 > robot my_first.robot
 ==============================================================================
