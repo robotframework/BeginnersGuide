@@ -1,5 +1,18 @@
 # Beginners Guide to Robot Framework
 
+Table of contents:
+
+- [Introduction](#introduction)
+- [Installation](#installation)
+    - [Troubleshooting installation](#troubleshooting-installation)
+    - [Selecting code editor](#selecting-code-editor)
+- [Writing a first automation case](#writing-a-first-automation-case)
+- [Viewing test results](#viewing-test-results)
+- [Content of the test case](#content-of-the-test-case)
+- [Variables](#variables)
+- [Keywords](#keywords)
+- [More information](#more-information)
+
 ## Introduction
 
 Hello! So you want to learn Robot Framework? This guide is everything you need for getting started! You don’t need any previous experience in test automation to use this guide. You will learn how to install Robot Framework on your computer and get started building cool automation.
@@ -52,19 +65,19 @@ Following example shows how to write your first robot automation case:
 My First Robot Test
     Log To Console            Hello Robot World!
 ```
-4. First test is now ready and it should look like this:
+First test is now ready and it should look like this:
 ```
 *** Test Cases ***
 
 My First Robot Test
     Log To Console            Hello Robot World!
 ```
-5. Open Terminal/Command Prompt. Navigate to the same folder where your `.robot` file is located and run the test by inputting command `robot my_first.robot`. For example:
+4. Open Terminal/Command Prompt. Navigate to the same folder where your `.robot` file is located and run the test by inputting command `robot my_first.robot`. For example:
 ```
 cd your_folder
 robot my_first.robot
 ```
-6. When Robot is run, you will see this:
+6. When Robot is run, you will see the results:
 ```
 > robot my_first.robot
 ==============================================================================
@@ -82,10 +95,52 @@ Log:     /log.html
 Report:  /report.html
 
 ``` 
-Robot has created test report files in the same folder where you run the test. You can check details of the first test run by opening report.html file.
+Congratulations! You have now run your first test case. Robot has created test report files in the same folder where you run the test.
 
-[Examples](./Examples) of this manual introduces Keyword Libraries and Variables related to Robot Framework automation.
+## Viewing test results
+You can check details of the first test run by opening report.html file.
+
+Running the demo generates the following three result files. These files are linked to pre-executed files available online, but executing the demo creates them locally.
+
+[report.html](./Results/report.html) - Higher level test report.
+
+[log.html](./Results/log.html) - Detailed test execution log.
+
+[output.xml](./Results/output.xml) - Results in machine readable XML format.
+
+## Content of the test case
+​
+Test cases are created from keywords that are ready made or user written. An example of a keyword is `Log To Console`, which you used in your first automation case. That keyword was part of the Robot Framework. There is a wide selection of other libraries [available](https://robotframework.org/#libraries), which you can use based on your needs.
+
+Your next automation case will show how to add libries to `Settings` section of your Robot file.
+1. Let's add an Operating Systems library to our next example:
+```
+*** Settings ***
+Library                             OperatingSystem
+```
+Your second test is now ready and it should look like this. This test will create a new file called new_file.txt:
+```
+*** Settings ***
+Library                             OperatingSystem
+
+***Test Cases***
+
+My Second Robot Test
+    Create File                     new_file.txt               Hello World!
+```
+2. Run the Robot like in the previous test.
+After running the Robot the new_file.txt should contain the text `Hello World!`.
+
+## Variables
+- TODO: variables -> Example how to use 
+
+## Keywords
+TODO:
+- library keywords
+- User keywords -> Link to quick start guide
 
 ## More information
 
 Thank you for visiting the Beginners Guide! Hope you enjoyed learning Robot Framework. More about writing test cases: [How To Write Good Test Cases](https://github.com/robotframework/HowToWriteGoodTestCases/blob/master/HowToWriteGoodTestCases.rst).
+
+[Examples](./Examples) of this manual introduces Keyword Libraries and Variables related to Robot Framework automation.
