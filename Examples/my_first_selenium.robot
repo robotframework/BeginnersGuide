@@ -4,6 +4,7 @@ Library                             SeleniumLibrary
 *** Variables ***
 
 *** Test Cases ***
+My Fisrt Selenium Robot Test
     [Tags]  my_first_selenium
     # Step 1 : aller sur le site https://thedemosite.co.uk/
     # Step 2 : cliquer sur le premier article de la page d'accueil

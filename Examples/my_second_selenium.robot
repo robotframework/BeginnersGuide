@@ -2,8 +2,13 @@
 Library                             SeleniumLibrary
 
 *** Variables ***
+${FIRSTNAME}  value
+${LASTNAME}   value
+${EMAIL}      value
+${MESSAGE}    value
 
 *** Test Cases ***
+My Second Selenium Robot Test
     [Tags]  my_second_selenium
     # Step 1 : aller sur le site https://thedemosite.co.uk/
     # Step 2 : cliquer dans le menu sur la page "Contact"
